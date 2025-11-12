@@ -1,0 +1,179 @@
+{
+  "site": {
+    "name": "React Siliguri",
+    "tagline": "Build. Learn. Connect.",
+    "description": "A modern hub for React developers in Siliguri. Join our meetups, talks, and workshops to grow your skills and network with the community.",
+    "url": "https://reactsiliguri.com",
+    "logo": "/logo.svg"
+  },
+  "navigation": [
+    { "name": "Home", "href": "#home", "active": true },
+    { "name": "Core Team", "href": "#team", "active": false },
+    { "name": "Events", "href": "#events", "active": false }
+  ],
+  "social": {
+    "github": "https://github.com/reactplay",
+    "twitter": "https://twitter.com/reactsiliguri",
+    "linkedin": "https://linkedin.com/company/reactsiliguri",
+    "instagram": "https://www.instagram.com/reactsiliguri/"
+  },
+  "hero": {
+    "title": "React Siliguri",
+    "subtitle": "Build. Learn. Connect.",
+    "description": "A modern hub for React developers in Siliguri. Join our meetups, talks, and workshops to grow your skills and network with the community.",
+    "cta": {
+      "primary": "Join the Community",
+      "secondary": "See Upcoming Events"
+    },
+    "stats": [
+      {
+        "label": "Community",
+        "value": "200+",
+        "description": "Active Members"
+      },
+      { "label": "Events", "value": "15+", "description": "Meetups Hosted" },
+      {
+        "label": "Learning",
+        "value": "50+",
+        "description": "Talks & Workshops"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": 1,
+      "title": "React 19 Deep Dive",
+      "description": "Explore the latest features and improvements in React 19",
+      "date": "2024-12-15",
+      "time": "2:00 PM - 5:00 PM",
+      "venue": "Tech Hub Siliguri",
+      "speaker": "Rahul Sharma",
+      "type": "Workshop",
+      "status": "upcoming",
+      "registrations": 45,
+      "maxCapacity": 50
+    },
+    {
+      "id": 2,
+      "title": "Next.js App Router Masterclass",
+      "description": "Build modern applications with Next.js 15 and App Router",
+      "date": "2024-12-28",
+      "time": "10:00 AM - 1:00 PM",
+      "venue": "Innovation Center",
+      "speaker": "Priya Das",
+      "type": "Meetup",
+      "status": "upcoming",
+      "registrations": 32,
+      "maxCapacity": 40
+    },
+    {
+      "id": 3,
+      "title": "State Management with Zustand",
+      "description": "Learn efficient state management patterns",
+      "date": "2024-11-20",
+      "time": "6:00 PM - 8:00 PM",
+      "venue": "Online",
+      "speaker": "Amit Kumar",
+      "type": "Talk",
+      "status": "completed",
+      "registrations": 85,
+      "maxCapacity": 100
+    }
+  ],
+  "team": [
+    {
+      "id": 1,
+      "name": "Debajit Mallick",
+      "role": "Senior Software Engineer",
+      "avatar": "https://ik.imagekit.io/t1i7pehzv/Core%20Team/Debajit%20Mallick.jpg?updatedAt=1762974926993",
+      "social": {
+        "github": "https://github.com/debajit13",
+        "twitter": "https://twitter.com/MallickDebajit",
+        "linkedin": "https://www.linkedin.com/in/debajit-mallick/"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Tapas Adhikary",
+      "avatar": "https://ik.imagekit.io/t1i7pehzv/Core%20Team/Tapas%20Adhikary.webp?updatedAt=1762975684061",
+      "social": {
+        "github": "https://github.com/atapas",
+        "linkedin": "https://www.linkedin.com/in/tapasadhikary/",
+        "twitter": "https://x.com/tapasadhikary"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Sankalan Dasgupta",
+      "avatar": "https://ik.imagekit.io/t1i7pehzv/Core%20Team/Sankalan%20Dasgupta.webp?updatedAt=1762975138252",
+      "social": {
+        "github": "https://github.com/Sankalan47",
+        "twitter": "https://twitter.com/Sankalan47",
+        "linkedin": "https://www.linkedin.com/in/sankalan-dasgupta"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Swarup Das",
+      "avatar": "https://ik.imagekit.io/t1i7pehzv/Core%20Team/Swarup%20Das.webp?updatedAt=1762975138305",
+      "social": {
+        "github": "https://github.com/Das-Swarup",
+        "linkedin": "https://www.linkedin.com/in/swarup-das-8bb857200/"
+      }
+    }
+  ],
+  "contributors": [
+    {
+      "id": 1,
+      "name": "Arjun Sharma",
+      "avatar": "/contributors/arjun.jpg",
+      "contributions": 12
+    },
+    {
+      "id": 2,
+      "name": "Kavya Singh",
+      "avatar": "/contributors/kavya.jpg",
+      "contributions": 8
+    },
+    {
+      "id": 3,
+      "name": "Rohit Das",
+      "avatar": "/contributors/rohit.jpg",
+      "contributions": 6
+    },
+    {
+      "id": 4,
+      "name": "Anita Pal",
+      "avatar": "/contributors/anita.jpg",
+      "contributions": 5
+    },
+    {
+      "id": 5,
+      "name": "Vikash Kumar",
+      "avatar": "/contributors/vikash.jpg",
+      "contributions": 4
+    },
+    {
+      "id": 6,
+      "name": "Meera Jain",
+      "avatar": "/contributors/meera.jpg",
+      "contributions": 3
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Saurabh Mondal",
+      "role": "Frontend Developer at TechCorp",
+      "content": "React Siliguri community helped me transition from beginner to professional. The mentorship and networking opportunities are incredible!",
+      "avatar": "/testimonials/saurabh.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Riya Chakraborty",
+      "role": "Full Stack Developer",
+      "content": "The workshops are always cutting-edge and practical. I've learned so much from the community experts.",
+      "avatar": "/testimonials/riya.jpg"
+    }
+  ]
+}

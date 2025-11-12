@@ -1,20 +1,23 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Poppins, JetBrains_Mono } from 'next/font/google';
+import './globals.css';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const poppins = Poppins({
+  variable: '--font-poppins',
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const jetbrainsMono = JetBrains_Mono({
+  variable: '--font-mono',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "React Siliguri - Build. Learn. Connect.",
-  description: "A modern hub for React developers in Siliguri. Join our meetups, talks, and workshops to grow your skills and network with the community.",
+  title: 'React Siliguri - Build. Learn. Connect.',
+  description:
+    'A modern hub for React developers in Siliguri. Join our meetups, talks, and workshops to grow your skills and network with the community.',
 };
 
 export default function RootLayout({
@@ -23,11 +26,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} ${jetbrainsMono.variable} font-poppins antialiased bg-background text-foreground`}
       >
-        {children}
+        <ThemeProvider defaultTheme="system" storageKey="react-siliguri-theme">
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
