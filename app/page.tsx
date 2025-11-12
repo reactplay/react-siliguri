@@ -11,7 +11,7 @@ export default function Home() {
             alt='React Siliguri'
             width={40}
             height={40}
-            className='h-12 w-auto'
+            className='h-12 w-auto rounded-full'
           />
         </div>
         <div className='hidden md:flex items-center space-x-6 text-sm'>
