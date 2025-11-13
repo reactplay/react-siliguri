@@ -43,9 +43,6 @@ const CommunityPartners = () => {
                   <h3 className='text-2xl font-bold text-foreground group-hover:text-primary transition-colors'>
                     {partner.name}
                   </h3>
-                  <p className='text-muted-foreground leading-relaxed'>
-                    {partner.description}
-                  </p>
                 </div>
 
                 {/* View Details Button */}
