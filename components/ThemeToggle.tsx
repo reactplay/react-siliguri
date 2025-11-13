@@ -3,8 +3,9 @@
 import { FaMoon, FaSun, FaDesktop } from 'react-icons/fa';
 import { Button } from '@/components/ui/button';
 import { useTheme } from './ThemeProvider';
+import dynamic from 'next/dynamic';
 
-export function ThemeToggle() {
+function ThemeToggleComponent() {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
@@ -40,3 +41,18 @@ export function ThemeToggle() {
     </Button>
   );
 }
+
+export const ThemeToggle = dynamic(() => Promise.resolve(ThemeToggleComponent), {
+  ssr: false,
+  loading: () => (
+    <Button
+      variant="ghost"
+      size="sm"
+      className="h-9 w-9 p-0"
+      disabled
+    >
+      <FaDesktop className="h-4 w-4" />
+      <span className="sr-only">Toggle theme</span>
+    </Button>
+  ),
+});

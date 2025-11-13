@@ -7,6 +7,20 @@ import siteData from '@/data/site.json';
 const Hero = () => {
   const { hero } = siteData;
 
+  const scrollToEvents = () => {
+    const eventsSection = document.getElementById('events');
+    if (eventsSection) {
+      eventsSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
+  const joinCommunity = () => {
+    window.open('https://chat.whatsapp.com/BTZ16UTw3zIKWVv877CatW', '_blank');
+  };
+
   return (
     <section id='home' className='relative min-h-screen bg-background'>
       {/* Background Pattern */}
@@ -68,20 +82,20 @@ const Hero = () => {
           <div className='flex flex-col sm:flex-row gap-4 mb-16'>
             <Button
               size='lg'
+              onClick={joinCommunity}
               className='bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 text-lg font-medium group shadow-lg hover:shadow-xl transition-all h-14 rounded-xl'
             >
               {hero.cta.primary}
               <FaArrowRight className='ml-2 h-4 w-4 transition-transform group-hover:translate-x-1' />
             </Button>
-            <a href='#events'>
-              <Button
-                size='lg'
-                variant='outline'
-                className='border-border hover:bg-accent hover:text-accent-foreground px-12 py-6 text-lg font-medium shadow-sm hover:shadow-md transition-all h-14 rounded-xl'
-              >
-                {hero.cta.secondary}
-              </Button>
-            </a>
+            <Button
+              size='lg'
+              variant='outline'
+              onClick={scrollToEvents}
+              className='border-border hover:bg-accent hover:text-accent-foreground px-12 py-6 text-lg font-medium shadow-sm hover:shadow-md transition-all h-14 rounded-xl'
+            >
+              {hero.cta.secondary}
+            </Button>
           </div>
 
           {/* Stats */}

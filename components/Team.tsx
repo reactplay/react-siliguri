@@ -31,7 +31,7 @@ const Team = () => {
             {team.map((member) => (
               <div
                 key={member.id}
-                className='bg-card backdrop-blur-sm border border-border rounded-2xl p-6 text-center hover:border-primary/50 hover:shadow-lg transition-all duration-300 group shadow-sm'
+                className='bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/50 hover:bg-card/80 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group shadow-sm dark:border-border/20 dark:hover:border-primary/50'
               >
                 {/* Avatar */}
                 <div className='relative mb-6'>

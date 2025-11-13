@@ -9,7 +9,8 @@
   "navigation": [
     { "name": "Home", "href": "#home", "active": true },
     { "name": "Core Team", "href": "#team", "active": false },
-    { "name": "Events", "href": "#events", "active": false }
+    { "name": "Events", "href": "#events", "active": false },
+    { "name": "Partners", "href": "#partners", "active": false }
   ],
   "social": {
     "github": "https://github.com/reactplay",
@@ -174,6 +175,26 @@
       "role": "Full Stack Developer",
       "content": "The workshops are always cutting-edge and practical. I've learned so much from the community experts.",
       "avatar": "/testimonials/riya.jpg"
+    }
+  ],
+  "communityPartners": [
+    {
+      "id": 1,
+      "name": "ReactPlay",
+      "logo": "https://ik.imagekit.io/t1i7pehzv/Community%20Partners/react%20play.png?updatedAt=1763036282492",
+      "website": "https://reactplay.io/"
+    },
+    {
+      "id": 2,
+      "name": "GDG Siliguri",
+      "logo": "https://ik.imagekit.io/t1i7pehzv/Community%20Partners/gdg%20siliguri.jpg?updatedAt=1763036110479",
+      "website": "https://gdgsiliguri.com/"
+    },
+    {
+      "id": 3,
+      "name": "React Kolkata",
+      "logo": "https://ik.imagekit.io/t1i7pehzv/Community%20Partners/react%20kolkata.png?updatedAt=1763036002662",
+      "website": "https://reactkolkata.com/"
     }
   ]
 }

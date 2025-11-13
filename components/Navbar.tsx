@@ -18,6 +18,10 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { site, navigation, social } = siteData;
 
+  const joinCommunity = () => {
+    window.open('https://chat.whatsapp.com/BTZ16UTw3zIKWVv877CatW', '_blank');
+  };
+
   const socialIcons = {
     github: FaGithub,
     twitter: FaTwitter,
@@ -85,7 +89,10 @@ const Navbar = () => {
             <ThemeToggle />
 
             {/* CTA Button */}
-            <Button className='bg-primary hover:bg-primary/90 text-primary-foreground'>
+            <Button
+              onClick={joinCommunity}
+              className='bg-primary hover:bg-primary/90 text-primary-foreground'
+            >
               Join Community
             </Button>
           </div>
@@ -143,7 +150,10 @@ const Navbar = () => {
                   <ThemeToggle />
                 </div>
 
-                <Button className='bg-primary hover:bg-primary/90 text-primary-foreground'>
+                <Button
+                  onClick={joinCommunity}
+                  className='bg-primary hover:bg-primary/90 text-primary-foreground'
+                >
                   Join Community
                 </Button>
               </div>
