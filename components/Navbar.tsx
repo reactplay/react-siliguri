@@ -93,7 +93,7 @@ const Navbar = () => {
               onClick={joinCommunity}
               className='bg-primary hover:bg-primary/90 text-primary-foreground'
             >
-              Join Community
+              Join Whatsapp Group
             </Button>
           </div>
 
@@ -129,8 +129,8 @@ const Navbar = () => {
                 </a>
               ))}
 
-              <div className='flex items-center justify-between pt-4 border-t border-border'>
-                <div className='flex items-center space-x-2'>
+              <div className='flex flex-col space-y-4 pt-4 border-t border-border'>
+                <div className='flex items-center justify-center space-x-2'>
                   {Object.entries(social).map(([platform, url]) => {
                     const IconComponent =
                       socialIcons[platform as keyof typeof socialIcons];
@@ -152,9 +152,9 @@ const Navbar = () => {
 
                 <Button
                   onClick={joinCommunity}
-                  className='bg-primary hover:bg-primary/90 text-primary-foreground'
+                  className='bg-primary hover:bg-primary/90 text-primary-foreground w-full'
                 >
-                  Join Community
+                  Join Whatsapp Group
                 </Button>
               </div>
             </div>

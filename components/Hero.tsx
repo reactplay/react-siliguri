@@ -18,7 +18,10 @@ const Hero = () => {
   };
 
   const joinCommunity = () => {
-    window.open('https://chat.whatsapp.com/BTZ16UTw3zIKWVv877CatW', '_blank');
+    window.open(
+      'https://www.commudle.com/communities/react-siliguri',
+      '_blank'
+    );
   };
 
   return (
