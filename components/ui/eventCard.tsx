@@ -9,7 +9,7 @@ interface EventCardProps {
 
 const EventCard: React.FC<EventCardProps> = ({ event }) => {
   const { theme } = useTheme();
-  const isDark = theme !== "dark";
+  const isDark = theme === "dark";
 
   const textPrimary = isDark ? "text-white" : "text-gray-900";
   const textSecondary = isDark ? "text-gray-300" : "text-gray-600";
