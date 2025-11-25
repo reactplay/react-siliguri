@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  FaCalendarAlt,
-  FaClock,
-  FaMapMarkerAlt,
-  FaUser,
-  FaUsers,
-} from "react-icons/fa";
-import { Button } from "./button";
+import { FaCalendarAlt, FaMapMarkerAlt, FaUser, FaUsers } from "react-icons/fa";
 import { useTheme } from "../ThemeProvider";
+import { Button } from "./button";
 
 interface EventCardProps {
   event: any;
@@ -76,7 +70,9 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
         </div>
 
         {/* Footer */}
-        <div className={`flex items-center justify-between mt-5 pt-4 border-t ${borderColor}`}>
+        <div
+          className={`flex items-center justify-between mt-5 pt-4 border-t ${borderColor}`}
+        >
           <div className={`flex items-center text-sm ${textSecondary}`}>
             <FaUsers className="mr-2" />
             {event.registrations} peoples have registered!
@@ -86,12 +82,27 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
         {/* Register button */}
         {event.status === "upcoming" && (
           <>
-          <Button variant={"outline"} className="w-full mt-4 rounded-xl h-12 text-base">
-            <a href={event.registrationUrl} target="_blank" rel="noopener noreferrer">Register for Event</a>
-          </Button>
-          <Button className="w-full mt-4 rounded-xl h-12 text-base">
-            <a href={event.speakerFormUrl} target="_blank" rel="noopener noreferrer">Become a Speaker</a>
-          </Button>
+            <Button
+              variant={"outline"}
+              className="w-full mt-4 rounded-xl h-12 text-base"
+            >
+              <a
+                href={event.registrationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Register for Event
+              </a>
+            </Button>
+            <Button className="w-full mt-4 rounded-xl h-12 text-base">
+              <a
+                href={event.speakerFormUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Become a Speaker
+              </a>
+            </Button>
           </>
         )}
       </div>
