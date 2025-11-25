@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaCalendarAlt, FaMapMarkerAlt, FaUser, FaUsers } from "react-icons/fa";
 import { useTheme } from "../ThemeProvider";
 import { Button } from "./button";
@@ -8,11 +8,23 @@ interface EventCardProps {
 }
 
 const EventCard: React.FC<EventCardProps> = ({ event }) => {
-
-
   const { theme } = useTheme();
+  const [isDark, setIsDark] = useState(true);
 
-  const isDark = theme == "dark" || (theme === "system" && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  useEffect(() => {
+    const checkTheme = () => {
+      const root = document.documentElement;
+      setIsDark(root.classList.contains("dark"));
+    };
+
+    checkTheme();
+
+    if (theme === "system") {
+      setIsDark(window.matchMedia("(prefers-color-scheme: dark)").matches);
+    } else {
+      setIsDark(theme === "dark");
+    }
+  }, [theme]);
 
   const textPrimary = isDark ? "text-white" : "text-gray-900";
   const textSecondary = isDark ? "text-gray-300" : "text-gray-600";
