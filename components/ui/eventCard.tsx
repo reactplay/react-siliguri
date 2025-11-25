@@ -73,14 +73,14 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
         </div>
 
         {/* Footer */}
-        <div
+        {/* <div
           className={`flex items-center justify-between mt-5 pt-4 border-t ${borderColor}`}
         >
           <div className={`flex items-center text-sm ${textSecondary}`}>
             <FaUsers className="mr-2" />
             {event.registrations} peoples have registered!
           </div>
-        </div>
+        </div> */}
 
         {/* Register button */}
         {event.status === "upcoming" && (
