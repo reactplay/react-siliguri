@@ -43,42 +43,19 @@
   "events": [
     {
       "id": 1,
-      "title": "React 19 Deep Dive",
-      "description": "Explore the latest features and improvements in React 19",
-      "date": "2024-12-15",
-      "time": "2:00 PM - 5:00 PM",
-      "venue": "Tech Hub Siliguri",
-      "speaker": "Rahul Sharma",
-      "type": "Workshop",
-      "status": "upcoming",
-      "registrations": 45,
-      "maxCapacity": 50
-    },
-    {
-      "id": 2,
-      "title": "Next.js App Router Masterclass",
-      "description": "Build modern applications with Next.js 15 and App Router",
-      "date": "2024-12-28",
-      "time": "10:00 AM - 1:00 PM",
-      "venue": "Innovation Center",
-      "speaker": "Priya Das",
-      "type": "Meetup",
-      "status": "upcoming",
-      "registrations": 32,
-      "maxCapacity": 40
-    },
-    {
-      "id": 3,
-      "title": "State Management with Zustand",
-      "description": "Learn efficient state management patterns",
-      "date": "2024-11-20",
+      "title": "Kickstarting React Siliguri with our first-ever online meetup!",
+      "description": "Deep dives into React, tools & real-world techniques 🧠",
+      "imageUrl":"https://json.commudle.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMVBqQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--0e5837365693d77b38132402806e8ce4580abf85/December%20Meetup%20-%202025.png",
+      "date": "2025-12-06",
       "time": "6:00 PM - 8:00 PM",
       "venue": "Online",
-      "speaker": "Amit Kumar",
-      "type": "Talk",
-      "status": "completed",
-      "registrations": 85,
-      "maxCapacity": 100
+      "speaker": "Calling for speakers!",
+      "type": "Workshop",
+      "status": "upcoming",
+      "registrationUrl": "https://www.commudle.com/fill-form/4219",
+      "speakerFormUrl": "https://www.commudle.com/fill-form/4218",
+      "registrations": 45,
+      "maxCapacity": 50
     }
   ],
   "team": [
