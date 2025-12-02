@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import {
   FaGithub,
   FaTwitter,
@@ -17,9 +18,27 @@ import siteData from '@/data/site.json';
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { site, navigation, social } = siteData;
+  const router = useRouter();
+  const pathname = usePathname();
 
   const joinCommunity = () => {
     window.open('https://chat.whatsapp.com/BTZ16UTw3zIKWVv877CatW', '_blank');
+  };
+
+  const handleNavigation = (href: string) => {
+    // If we're not on the home page and the link is a hash link, go to home first
+    if (pathname !== '/' && href.startsWith('#')) {
+      router.push(`/${href}`);
+    } else if (href.startsWith('#')) {
+      // If we're on home page, use smooth scroll
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      router.push(href);
+    }
+    setIsMobileMenuOpen(false);
   };
 
   const socialIcons = {
@@ -50,15 +69,15 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className='hidden lg:flex items-center space-x-8'>
             {navigation.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
+                onClick={() => handleNavigation(item.href)}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
                   item.active ? 'text-primary' : 'text-muted-foreground'
                 }`}
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </div>
 
@@ -117,16 +136,15 @@ const Navbar = () => {
           <div className='container mx-auto px-6 py-4'>
             <div className='flex flex-col space-y-4'>
               {navigation.map((item) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
+                  onClick={() => handleNavigation(item.href)}
+                  className={`text-sm font-medium transition-colors hover:text-primary text-left ${
                     item.active ? 'text-primary' : 'text-muted-foreground'
                   }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
 
               <div className='flex flex-col space-y-4 pt-4 border-t border-border'>

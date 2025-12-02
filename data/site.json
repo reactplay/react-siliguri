@@ -45,7 +45,7 @@
       "id": 1,
       "title": "Kickstarting React Siliguri with our first-ever online meetup!",
       "description": "Deep dives into React, tools & real-world techniques 🧠",
-      "imageUrl":"https://json.commudle.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMVBqQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--0e5837365693d77b38132402806e8ce4580abf85/December%20Meetup%20-%202025.png",
+      "imageUrl": "https://ik.imagekit.io/t1i7pehzv/Events/December%20Meetup%20-%202025.png",
       "date": "2025-12-06",
       "time": "6:00 PM - 8:00 PM",
       "venue": "Online",
@@ -54,8 +54,21 @@
       "status": "upcoming",
       "registrationUrl": "https://www.commudle.com/fill-form/4219",
       "speakerFormUrl": "https://www.commudle.com/fill-form/4218",
-      "registrations": 45,
-      "maxCapacity": 50
+      "speakers": [
+        {
+          "id": 1,
+          "name": "Tapas Adhikary",
+          "image": "https://ik.imagekit.io/t1i7pehzv/Core%20Team/Tapas%20Adhikary.webp?updatedAt=1762975684061",
+          "designation": "Founder",
+          "company": "ReactPlay",
+          "sessionTitle": "React Performance Optimization Techniques",
+          "social": {
+            "github": "https://github.com/atapas",
+            "linkedin": "https://www.linkedin.com/in/tapasadhikary/",
+            "twitter": "https://x.com/tapasadhikary"
+          }
+        }
+      ]
     }
   ],
   "team": [

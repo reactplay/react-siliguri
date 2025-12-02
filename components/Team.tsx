@@ -76,54 +76,6 @@ const Team = () => {
             ))}
           </div>
         </div>
-
-        {/* Contributors Section */}
-        {/* <div id='contributors'>
-          <div className='text-center mb-12'>
-            <h2 className='text-4xl md:text-5xl font-bold text-foreground mb-4'>
-              Contributors
-            </h2>
-            <p className='text-xl text-muted-foreground max-w-2xl mx-auto'>
-              Amazing community members who help make events successful
-            </p>
-          </div>
-
-          <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6'>
-            {contributors.map((contributor) => (
-              <div
-                key={contributor.id}
-                className='bg-card backdrop-blur-sm border border-border rounded-2xl p-4 text-center hover:border-primary/50 hover:shadow-md transition-all duration-300 group shadow-sm'
-              >
-                <div className='relative mb-4'>
-                  <div className='w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-green-500 to-teal-600 p-1'>
-                    <div className='w-full h-full rounded-full bg-slate-800 flex items-center justify-center text-lg font-bold text-white'>
-                      {contributor.name
-                        .split(' ')
-                        .map((n) => n[0])
-                        .join('')}
-                    </div>
-                  </div>
-                  <div className='absolute -top-2 -right-2 bg-primary text-primary-foreground text-xs rounded-full w-6 h-6 flex items-center justify-center font-bold'>
-                    {contributor.contributions}
-                  </div>
-                </div>
-
-                <h3 className='text-sm font-semibold text-foreground mb-1 group-hover:text-primary transition-colors'>
-                  {contributor.name}
-                </h3>
-                <p className='text-xs text-muted-foreground'>
-                  {contributor.contributions} contributions
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className='text-center mt-8'>
-            <button className='text-primary hover:text-primary/80 font-medium'>
-              View all contributors →
-            </button>
-          </div>
-        </div> */}
       </div>
     </section>
   );
