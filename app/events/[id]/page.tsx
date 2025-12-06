@@ -236,6 +236,30 @@ export default function EventDetailsPage() {
                   </div>
                 </div>
               )}
+
+              {/* Event Pictures Section */}
+              {event.eventPictures && event.eventPictures.length > 0 && (
+                <div className='mb-8'>
+                  <h2 className={`text-2xl font-bold mb-6 ${textPrimary}`}>
+                    Event Pictures
+                  </h2>
+                  <div className='space-y-6'>
+                    {event.eventPictures.map((picture, index) => (
+                      <div
+                        key={index}
+                        className='relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow'
+                      >
+                        <Image
+                          src={picture}
+                          alt={`Event picture ${index + 1}`}
+                          fill
+                          className='object-cover group-hover:scale-105 transition-transform duration-300'
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Sidebar - Right Side */}

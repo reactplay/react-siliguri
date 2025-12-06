@@ -45,29 +45,47 @@
       "id": 1,
       "title": "Kickstarting React Siliguri with our first-ever online meetup!",
       "description": "Deep dives into React, tools & real-world techniques 🧠",
-      "imageUrl": "https://ik.imagekit.io/t1i7pehzv/Events/December%20Meetup%20-%202025.png",
+      "imageUrl": "https://ik.imagekit.io/t1i7pehzv/Events/December%20Meetup%202025/December%20Meetup%202025%20banner.webp",
       "date": "2025-12-06",
       "time": "6:00 PM - 8:00 PM",
       "venue": "Online",
       "speaker": "Calling for speakers!",
       "type": "Workshop",
-      "status": "upcoming",
-      "registrationUrl": "https://www.commudle.com/fill-form/4219",
-      "speakerFormUrl": "https://www.commudle.com/fill-form/4218",
+      "status": "past",
+      "registrationUrl": "",
+      "speakerFormUrl": "",
       "speakers": [
         {
           "id": 1,
-          "name": "Tapas Adhikary",
-          "image": "https://ik.imagekit.io/t1i7pehzv/Core%20Team/Tapas%20Adhikary.webp?updatedAt=1762975684061",
-          "designation": "Founder",
-          "company": "ReactPlay",
-          "sessionTitle": "React Performance Optimization Techniques",
+          "name": "Kushal Ghosh",
+          "image": "https://ik.imagekit.io/t1i7pehzv/Speakers/Kaushal%20Ghosh.png",
+          "designation": "Senior Software Engineer",
+          "company": "cinedubs",
+          "sessionTitle": "Stop Writing Code. Start Building Systems",
           "social": {
-            "github": "https://github.com/atapas",
-            "linkedin": "https://www.linkedin.com/in/tapasadhikary/",
-            "twitter": "https://x.com/tapasadhikary"
+            "github": "https://github.com/KushalGhosh9899",
+            "linkedin": "https://www.linkedin.com/in/kushal-ghosh-full-stack-web-developer/",
+            "twitter": ""
+          }
+        },
+        {
+          "id": 2,
+          "name": "Ruchi Mishra",
+          "image": "https://ik.imagekit.io/t1i7pehzv/Speakers/Ruchi%20Mishra.jpeg",
+          "designation": "Student",
+          "company": "KIET Group Of Institution",
+          "sessionTitle": "AI + Developers: Building the Future One Line of Code at a Time",
+          "social": {
+            "github": "https://github.com/ruchi-mish90",
+            "linkedin": "https://www.linkedin.com/in/ruchi-mishra-195697381",
+            "twitter": ""
           }
         }
+      ],
+      "eventPictures": [
+        "https://ik.imagekit.io/t1i7pehzv/Events/December%20Meetup%202025/img1.webp?updatedAt=1765033590459",
+        "https://ik.imagekit.io/t1i7pehzv/Events/December%20Meetup%202025/img2.webp?updatedAt=1765033103531",
+        "https://ik.imagekit.io/t1i7pehzv/Events/December%20Meetup%202025/img3.webp?updatedAt=1765033103525"
       ]
     }
   ],

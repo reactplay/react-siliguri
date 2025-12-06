@@ -123,41 +123,6 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
           </div>
         </div>
       </Link>
-
-      {/* Register button - Outside Link to prevent nested anchor tags */}
-      <div className='px-5 pb-5'>
-        {event.status === 'upcoming' && (
-          <>
-            <Button
-              variant={'outline'}
-              className='w-full mt-4 rounded-xl h-12 text-base'
-              disabled={event.registrationUrl ? false : true}
-            >
-              <a
-                href={event.registrationUrl}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='w-full'
-              >
-                Register for Event
-              </a>
-            </Button>
-            <Button
-              className='w-full mt-4 rounded-xl h-12 text-base'
-              disabled={event.speakerFormUrl ? false : true}
-            >
-              <a
-                href={event.speakerFormUrl}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='w-full'
-              >
-                Become a Speaker
-              </a>
-            </Button>
-          </>
-        )}
-      </div>
     </div>
   );
 };
